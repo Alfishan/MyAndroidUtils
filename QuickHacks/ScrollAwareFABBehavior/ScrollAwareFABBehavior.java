@@ -1,4 +1,3 @@
-package xeme.fsg.customThings;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;

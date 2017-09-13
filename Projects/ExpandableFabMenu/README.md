@@ -1,5 +1,6 @@
-<br/>
-# ![Logo](Screenshots/ic_launcher.png)   Expandable FAB Menu using DialogFragment</span>
+
+![Logo](Screenshots/ic_launcher.png)
+# Expandable FAB Menu using DialogFragment</span>
 
 ## [Here is the APK](app/build/outputs/apk/app-debug.apk)
 

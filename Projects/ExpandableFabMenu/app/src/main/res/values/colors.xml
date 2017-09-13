@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#01000000</color>
+    <color name="transparent_175_dark">#af000000</color>
+    <color name="transparent_150_dark">#96000000</color>
+    <color name="transparent_75_dark">#4b000000</color>
+    <color name="transparent_50_dark">#32000000</color>
+    <color name="transparent_25_dark">#19000000</color>
+    <color name="semi_transparent">#87000000</color>
+    <color name="semi_transparent_white">#cbffffff</color>
+    <color name="black_magic">#2E2B27</color>
+    <color name="ocean_green">#009688</color>
+    <color name="ocean__trans_green">#d2009688</color>
+    <color name="mat_l_blue_500">#FF03A9F4</color>
+
+    <color name="fabMenuService">#00bcd4</color>
+    <color name="fabMenuExpense">#ffc107</color>
+    <color name="fabMenuRefueling">#8bc34a</color>
+    <color name="fabMenu4">#81c784</color>
+    <color name="fabMenu5">#f06292</color>
+    <color name="fabMenu6">#5c6bc0</color>
+    <color name="fabMenu7">#e57373</color>
+    <color name="fabMenu8">#1de9b6</color>
+
+
+
+    <color name="snow">#fffafafa</color>
+    <color name="mat_red_400">#ef5350</color>
+
+</resources>

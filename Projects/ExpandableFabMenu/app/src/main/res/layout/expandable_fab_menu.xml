@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:background="@color/transparent_75_dark"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:layout_editor_absoluteY="25dp"
+                                             tools:layout_editor_absoluteX="0dp">
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_credit_card_white_36dp"
+            android:id="@+id/fab_menu_expense"
+            android:layout_marginRight="24dp"
+            app:rippleColor="@color/black_magic"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/fab_menu_refueling"
+            app:backgroundTint="@color/fabMenuExpense"
+            android:layout_marginEnd="24dp"/>
+
+    <TextView
+            android:text="Expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_menu_expense_label"
+            app:layout_constraintRight_toLeftOf="@+id/fab_menu_expense"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_fabmenu_text"
+            android:textAppearance="@style/TextLargeLight"
+            android:padding="5dp"
+            android:textColor="@color/snow"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab_menu_expense"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/fab_menu_expense"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:rippleColor="@color/black_magic"
+            app:srcCompat="@drawable/ic_local_gas_station_white_36dp"
+            android:id="@+id/fab_menu_refueling"
+            android:layout_marginRight="24dp"
+
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/fab_menu_service"
+            app:backgroundTint="@color/fabMenuRefueling"
+            android:layout_marginEnd="24dp"/>
+
+    <TextView
+            android:text="Refueling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_menu_refueling_label"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_fabmenu_text"
+            android:textAppearance="@style/TextNormalLight"
+            android:padding="5dp"
+            android:textColor="@color/snow"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/fab_menu_refueling"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab_menu_refueling"
+            app:layout_constraintTop_toTopOf="@+id/fab_menu_refueling"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_build_white_36dp"
+            android:id="@+id/fab_menu_service"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/fab_menu_close"
+            android:layout_marginRight="24dp"
+            app:rippleColor="@color/black_magic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:backgroundTint="@color/fabMenuService"
+            android:layout_marginEnd="24dp"/>
+
+    <TextView
+            android:text="Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_menu_service_label"
+            android:background="@drawable/bg_fabmenu_text"
+            android:textAppearance="@style/TextSmallerLight"
+            android:padding="5dp"
+            android:textColor="@color/snow"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/fab_menu_service"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fab_menu_service"
+            app:layout_constraintTop_toTopOf="@+id/fab_menu_service"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            style="@style/CloseFab"
+            android:id="@+id/fab_menu_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+  <!--  <android.support.constraint.Group
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="fab_menu_expense,fab_menu_expense_label"
+            android:id="@+id/group_expense"/>
+
+    <android.support.constraint.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="fab_menu_refueling,fab_menu_refueling_label"
+            android:id="@+id/group_refueling"/>
+
+    <android.support.constraint.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="fab_menu_service,fab_menu_service_label"
+            android:id="@+id/group_service"/>-->
+
+</android.support.constraint.ConstraintLayout>

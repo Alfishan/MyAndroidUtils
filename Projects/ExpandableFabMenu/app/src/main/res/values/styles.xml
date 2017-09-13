@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/BaseTheme" >
+        <item name="android:windowBackground">@drawable/bg_grad</item>
+    </style>
+
+    <style name="BaseTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/snow</item>
+        <item name="android:windowBackground">@color/snow</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimaryDark">@color/material_grey_900</item>
+        <item name="colorPrimary">@color/black_magic</item>
+        <item name="colorAccent">@color/ocean_green</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="Regular" parent="@android:style/TextAppearance">
+        <item name="fontPath">fonts/MontserratRegular.ttf</item>
+    </style>
+    <style name="Medium" parent="@android:style/TextAppearance">
+        <item name="fontPath">fonts/MontserratMedium.ttf</item>
+    </style>
+
+    <style name="Light" parent="@android:style/TextAppearance">
+        <item name="fontPath">fonts/MontserratLight.ttf</item>
+    </style>
+
+    <style name="SemiBold" parent="@android:style/TextAppearance">
+        <item name="fontPath">fonts/MontserratSemiBold.ttf</item>
+    </style>
+
+    <style name="TextSmallerLight" parent="@style/Light">
+        <item name="android:textSize">@dimen/font_smaller</item>
+    </style>
+    <style name="TextSmallerSemiBold" parent="@style/SemiBold">
+        <item name="android:textSize">@dimen/font_smaller</item>
+    </style>
+    <style name="TextSmallerMedium" parent="@style/Medium">
+        <item name="android:textSize">@dimen/font_smaller</item>
+    </style>
+    <style name="TextSmallerRegular" parent="@style/Regular">
+        <item name="android:textSize">@dimen/font_smaller</item>
+    </style>
+
+
+    <style name="TextNormalLight" parent="@style/Light">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="TextNormalSemiBold" parent="@style/SemiBold">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="TextNormalMedium" parent="@style/Medium">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="TextNormalRegular" parent="@style/Regular">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="TextLargeLight" parent="@style/Light">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+    <style name="TextLargeSemiBold" parent="@style/SemiBold">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+    <style name="TextLargeMedium" parent="@style/Medium">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+    <style name="TextLargeRegular" parent="@style/Regular">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+
+    <style name="CloseFab" parent="Widget.Design.FloatingActionButton">
+        <item name="srcCompat">@android:drawable/ic_menu_close_clear_cancel</item>
+        <item name="fabSize">normal</item>
+        <item name="backgroundTint">@color/black_magic</item>
+        <item name="rippleColor">@color/mat_red_400</item>
+        <item name="colorButtonNormal">@color/black_magic</item>
+    </style>
+
+    <style name="MyFullscreenDialog" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+
+    <dimen name="font_smaller">12dp</dimen>
+    <dimen name="font_normal">14dp</dimen>
+    <dimen name="font_large">18dp</dimen>
+</resources>

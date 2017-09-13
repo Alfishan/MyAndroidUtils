@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+               android:shape="rectangle">
+            <gradient
+                    android:centerX="0.50"
+                    android:angle="270"
+                    android:type="linear"
+                    android:startColor="@color/fabMenuService"
+                    android:centerColor="@color/fabMenu8"
+                    android:endColor="@color/ocean_green"/>
+        </shape>
+    </item>
+
+    <item>
+        <color android:color="@color/transparent_75_dark"/>
+    </item>
+
+</layer-list>

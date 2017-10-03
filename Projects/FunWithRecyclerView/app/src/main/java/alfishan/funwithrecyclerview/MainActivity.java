@@ -12,17 +12,20 @@ import java.util.Random;
 
 import alfishan.funwithrecyclerview.adapters.MultiChoiceAdapter;
 import alfishan.funwithrecyclerview.adapters.SingleChoiceAdapter;
+import alfishan.funwithrecyclerview.adapters.SingleChoiceWithDefaultAdapter;
 import alfishan.funwithrecyclerview.models.ColorItem;
 import alfishan.funwithrecyclerview.models.SingleChoiceItem;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements SingleChoiceAdapter.Helper, MultiChoiceAdapter.Helper {
+public class MainActivity extends AppCompatActivity implements SingleChoiceAdapter.Helper, MultiChoiceAdapter.Helper, SingleChoiceWithDefaultAdapter.Helper {
 
     @BindView(R.id.single_choice_rv)
     RecyclerView mSingleChoiceRv;
     @BindView(R.id.multi_choice_rv)
     RecyclerView mMultiChoiceRv;
+    @BindView(R.id.single_choice_default_rv)
+    RecyclerView mSingleChoiceDefaultRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +44,26 @@ public class MainActivity extends AppCompatActivity implements SingleChoiceAdapt
             mColors.add(new ColorItem(i, color));
         }
 
-        mSingleChoiceRv.setHasFixedSize(true);
+        // to set 1st color as selected
+        ((ColorItem) mColors.get(0)).setSelected(true);
+
+
         SingleChoiceAdapter mSingleChoiceAdapter = new SingleChoiceAdapter(this, this);
+        SingleChoiceWithDefaultAdapter mSingleChoiceWithDefaultAdapter = new SingleChoiceWithDefaultAdapter(this, this);
         MultiChoiceAdapter mMultiChoiceAdapter = new MultiChoiceAdapter(this, this);
+
         mSingleChoiceRv.setAdapter(mSingleChoiceAdapter);
         mMultiChoiceRv.setAdapter(mMultiChoiceAdapter);
+        mSingleChoiceDefaultRv.setAdapter(mSingleChoiceWithDefaultAdapter);
+
         mSingleChoiceAdapter.setValues(mColors);
         mMultiChoiceAdapter.setValues(mColors);
+        mSingleChoiceWithDefaultAdapter.setValues(mColors);
+
+        mSingleChoiceRv.setHasFixedSize(true);
+        mMultiChoiceRv.setHasFixedSize(true);
+        mSingleChoiceDefaultRv.setHasFixedSize(true);
+
 
     }
 

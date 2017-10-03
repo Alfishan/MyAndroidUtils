@@ -7,6 +7,11 @@ package alfishan.funwithrecyclerview.models;
 public class ColorItem implements SingleChoiceItem {
     private int id;
     private int color;
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
+    }
+
     private boolean isSelected = false;
 
     public ColorItem(int id, int color) {

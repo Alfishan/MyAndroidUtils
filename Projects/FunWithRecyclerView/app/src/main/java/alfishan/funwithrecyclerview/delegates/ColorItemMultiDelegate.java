@@ -20,6 +20,7 @@ package alfishan.funwithrecyclerview.delegates;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -113,7 +114,7 @@ public class ColorItemMultiDelegate extends AdapterDelegate<List<Object>> {
             if (mItemListener != null) {
                 mIsSelected= mItemListener.isSelected(getAdapterPosition());
                 if (mIsSelected) {
-                    mColorItem.setImageResource(R.drawable.ic_selected);
+                    mColorItem.setImageDrawable(VectorDrawableCompat.create(mColorItem.getContext().getResources(), R.drawable.ic_selected,null));
                 }
                 else {
                     mColorItem.setImageDrawable(null);
@@ -127,7 +128,7 @@ public class ColorItemMultiDelegate extends AdapterDelegate<List<Object>> {
             mItemListener.selectionToggle(mItem,getAdapterPosition());
             mIsSelected = !mIsSelected;
             if (mIsSelected) {
-                mColorItem.setImageResource(R.drawable.ic_selected);
+                mColorItem.setImageDrawable(VectorDrawableCompat.create(mColorItem.getContext().getResources(), R.drawable.ic_selected,null));
                 YoYo.with(Techniques.Pulse).duration(300).playOn(mView);
             } else {
                 mColorItem.setImageDrawable(null);
